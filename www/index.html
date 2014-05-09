@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style>
+    	body { color: #999; }
+    	fieldset { width: 400px; border: solid #999 1px; margin: 20px auto;}
+    	.fieldRow {margin: 10px;}
+    	.inputWrap { display: inline-block; border: solid #999 1px;}
+    	.inputWrap .unit { padding-right: 10px; }
+    	input { display: inline; padding: 4px; border: 0; outline: none;}
+    	input[type="number"] { width: 50px; text-align: right; }
+    	label { display: inline-block; width: 110px;}
+    	.submitButt { display: block; width: 420px; padding: 40px; text-align: center; margin: auto; font-size: 4em;}
+    	
+    </style>
+</head>
+<body>
+
+	<div class="recipe">
+		<input name="recipe" placeholder="Recipe Name">
+
+		<fieldset>
+			<legend>Coffee</legend>
+
+			<div class="fieldRow">
+				<label>Coffee Type</label>
+				<div class="inputWrap">
+					<input name="type" placeholder="Coffee Type (tags)">
+				</div>
+			</div>
+			<div class="fieldRow">
+				<label>Grind</label>
+				<div class="inputWrap">
+					<input name="grind" placeholder="Grind Coarseness">
+				</div>
+			</div>
+			<div class="fieldRow">
+				<label>Amount</label>
+				<div class="inputWrap">
+					<input type="number" name="coffeeAmount">
+					<span class="unit">oz</span>
+				</div>
+			</div>
+
+		</fieldset>
+
+		<fieldset>
+			<legend>Water</legend>
+
+			<div class="fieldRow">
+				<label>Amount</label>
+				<div class="inputWrap">
+					<input type="number" name="waterAmount">
+					<span class="unit">oz</span>
+				</div>
+			</div>
+			<div class="fieldRow">
+				<label>Temp</label>
+				<div class="inputWrap">
+					<input type="number" name="waterTemp">
+					<span class="unit">f</span>
+				</div>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Time</legend>
+
+			<div class="fieldRow">
+				<label>Bloom</label>
+				<div class="inputWrap">
+					<input type="number" name="bloomTime">
+					<span class="unit">min</span>
+				</div>
+			</div>
+			<div class="fieldRow">
+				<label>Steep</label>
+				<div class="inputWrap">
+					<input type="number" name="steepTime">
+					<span class="unit">min</span>
+				</div>
+			</div>
+		</fieldset>
+
+		<button class="submitButt">Submit</button>
+	</div>
+
+</body>
+</html>
